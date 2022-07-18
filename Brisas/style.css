@@ -1,0 +1,21 @@
+@charset "UTF-8"
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+body {
+    background-image: linear-gradient(to top,#7043b8,#975BF8,#4A2C79,#42286C,#321E52);
+    
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.064);
+    border-radius: 2pc;
+}

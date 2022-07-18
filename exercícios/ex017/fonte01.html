@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+
+            /*
+            Medidas Absolutas
+            cm, mm, pc, in, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16 px normalmente é igual a 1em
+
+            Usar a medida de em pois é melhor e se adapta as diferentes telas
+            */
+
+            font-size: 1em ;
+            font-weight: normal;
+            font-style: italic;
+
+            /*weight significa peso da fonte*/
+
+        }
+
+        h1 {
+            /*
+            Shorthand font
+            - font style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder; 
+            font-size: 3em;
+            font-style: italic;
+            */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis placeat, eius hic quia magni, mollitia labore asperiores obcaecati illum sapiente iure amet accusantium quod tempora itaque cum a modi. Est.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus obcaecati laboriosam quos dolores aliquam ullam fugiat. Deleniti aspernatur hic quod obcaecati, est voluptatibus a optio beatae harum recusandae delectus?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum fugit animi a architecto veritatis incidunt sequi facilis illo repellendus! Suscipit sint nisi quaerat vitae error in, accusantium ipsam alias.</p>
+    
+</body>
+</html>
