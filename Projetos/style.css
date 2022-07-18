@@ -25,34 +25,41 @@ header h1 {
 
 header >p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 4px rgba(255, 255, 255, 0.64);
 }
 
 nav {
     background-color: brown;
     text-align: center;
-
+    font-family: 'avengers';
+    padding: 10px;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    padding: 0px 20px;
+    padding: 3px 29px;
+}
+
+
+
+nav>a:hover {
+    transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.634);
+    border-radius: 12px;
+    font-size: 1.4em;
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(58, 58, 58);
 }
-
-a:hover {
-    transition-duration: 0.5s;
-    background-color: rgba(0, 0, 0, 0.634);
-    border-radius: 9px;
-}
-
 img.banner {
     max-width: 100%;
 
 }
+
 
 main img.herois {
     display: block;
@@ -71,10 +78,20 @@ main {
 
 main h1 {
     font-family: 'avengers';
-    padding: 60px;
+    padding-top:12px ;
     text-align: center;
     font-size: 3em;
     color: rgba(102, 8, 8, 0.952);
+    background-image: linear-gradient(to right, black, transparent);
+    margin-top: -6px;
+    text-shadow: 0px 1px 3px white;
+}
+
+main h1:hover {
+    font-size: 4em;
+    font-weight: bold;
+    transition: 1s;
+
 }
 
 main h2 {
@@ -82,11 +99,36 @@ main h2 {
     padding: 60px;
     text-align: center;
     font-size: 2em;
+    text-shadow: 0px 1px 2px white;
+}
+
+main h2:hover {
+    font-size: 3em;
+    font-weight: bold;
+    transition: 1s;
+
+}
+
+main h2.ferro {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.395), transparent);
+}
+
+main h2.america {
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.378), transparent);
+}
+
+main h2.hulk {
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.385), transparent);
+}
+
+main h2.thor {
+    background-image: linear-gradient(to right, rgba(0, 255, 247, 0.39), transparent);
 }
 
 main p {
     text-align: justify;
     padding: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -98,6 +140,7 @@ footer p{
     color: white;
     padding: 3px;
     text-align: center;
+    margin-top: 30px;
 }
 footer a{
     color: white;
