@@ -7,3 +7,5 @@
 
 
 <a href="https://brenoemori.github.io/html-css/Projetos/index.html"> Projeto 1 vingadores</a>
+
+<a href="https://brenoemori.github.io/html-css/Desafios/d002/index.html">Página Paralax</a>
