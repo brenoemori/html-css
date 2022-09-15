@@ -1,153 +1,164 @@
-@charset "UTF-8";      
+@charset "UTF-8" ;
 
-@font-face {
-    font-family: 'avengers';
-    src: url('fontes/avengeance/AVENGEANCE\ HEROIC\ AVENGER.otf') format('opentype');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-header {
-    text-align: center;
-    background-color: rgba(102, 8, 8, 0.952);
-    padding: 20px;
-}
-
-header h1 {
-    font-family: 'avengers';
-    font-size: 4em;
-    text-shadow: 0 2px 6px white;
-}     
-
-header >p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-shadow: 0.5px 0.5px 4px rgba(255, 255, 255, 0.64);
-}
-
-nav {
-    background-color: brown;
-    text-align: center;
-    font-family: 'avengers';
-    padding: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 3px 29px;
-}
-
-
-
-nav>a:hover {
-    transition-duration: 0.5s;
-    background-color: rgba(0, 0, 0, 0.634);
-    border-radius: 12px;
-    font-size: 1.4em;
+ul {
+    list-style: none;
 }
 
 body {
-    background-color: rgb(58, 58, 58);
-}
-img.banner {
-    max-width: 100%;
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
 
 }
 
+body * {
+    font-family: 'Inter', sans-serif;
+}
 
-main img.herois {
-    display: block;
-   margin: auto;
+header {
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+
+    transition: transform 0.3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
 
 }
+
+header div img {
+    border-radius: 50%;
+    width: 100%;
+}
+
 
 main {
-    max-width: 900px;
-    margin: auto;
-    background-color: aliceblue;
-    box-shadow: 0 3px 5px black;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
 
-main h1 {
-    font-family: 'avengers';
-    padding-top:12px ;
-    text-align: center;
-    font-size: 3em;
-    color: rgba(102, 8, 8, 0.952);
-    background-image: linear-gradient(to right, black, transparent);
-    margin-top: -6px;
-    text-shadow: 0px 1px 3px white;
-}
-
-main h1:hover {
-    font-size: 4em;
-    font-weight: bold;
-    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
 }
 
-main h2 {
-    font-family: 'avengers';
-    padding: 60px;
-    text-align: center;
-    font-size: 2em;
-    text-shadow: 0px 1px 2px white;
-}
-
-main h2:hover {
-    font-size: 3em;
-    font-weight: bold;
-    transition: 1s;
-
-}
-
-main h2.ferro {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.395), transparent);
-}
-
-main h2.america {
-    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.378), transparent);
-}
-
-main h2.hulk {
-    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.385), transparent);
-}
-
-main h2.thor {
-    background-image: linear-gradient(to right, rgba(0, 255, 247, 0.39), transparent);
-}
-
-main p {
-    text-align: justify;
-    padding: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-footer {
-    background-color: black;
-}
-
-footer p{
+section {
     color: white;
-    padding: 3px;
-    text-align: center;
-    margin-top: 30px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
 }
-footer a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+
+section div {
+    background-color: #2A2634 ;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
 }
-footer a:hover {
-    color:red;
-    text-decoration: solid;
+
+section h2 {
+    letter-spacing: -0.47px;
 }
+
+section p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+    margin-top: 24px;
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img{
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #443e54
+}
+
+/*animation*/
+
+header div { 
+    animation: fromTop .7s .2s backwards;
+
+}
+
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+main section:nth-child(3) {
+    animation-delay: .6s
+}
+
+
+@keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
